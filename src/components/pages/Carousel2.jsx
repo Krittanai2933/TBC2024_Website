@@ -36,26 +36,26 @@ export const Carousel2 = () => {
     };
 
     const speakers = [
-      { image: image1, name: 'Speaker 1'},
+      { image: image1, name: 'Albert Buu'},
       { image: image2, name: 'Speaker 2' },
-      { image: image3, name: 'Speaker 3'},
-      { image: image4, name: 'Speaker 4' },
-      { image: image5, name: 'Speaker 5'},
-      { image: image6, name: 'Speaker 6' },
-      { image: image7, name: 'Speaker 7'},
-      { image: image8, name: 'Speaker 8' },
-      { image: image9, name: 'Speaker 9'},
-      { image: image10, name: 'Speaker 10'},
-      { image: image11, name: 'Speaker 11'},
-      { image: image12, name: 'Speaker 12'},
-      { image: image13, name: 'Speaker 13'},
-      { image: image14, name: 'Speaker 14'},
-      { image: image15, name: 'Speaker 15' },
+      { image: image3, name: 'Deja Piyavhatkul'},
+      { image: image4, name: 'Chayoot Anukoolkarn' },
+      { image: image5, name: 'Dea Rezkhita'},
+      { image: image6, name: 'Captain Sidd' },
+      { image: image7, name: 'เพียว Cat Money'},
+      { image: image8, name: 'Piccolo' },
+      { image: image9, name: 'Pisut Oncharoen'},
+      { image: image10, name: 'Piriya Sambandaraksa'},
+      { image: image11, name: 'Dr.Big'},
+      { image: image12, name: 'Jimmy Kostro'},
+      { image: image13, name: 'Michael R. Keag'},
+      { image: image14, name: 'Rolan Bewick'},
+      { image: image15, name: 'Thanakrit Sangnongban' },
       { image: image16, name: 'Speaker 16'},
-      { image: image17, name: 'Speaker 17'},
-      { image: image18, name: 'Speaker 18' },
-      { image: image19, name: 'Speaker 19'},
-      { image: image20, name: 'Speaker 20'}
+      { image: image17, name: 'Wichit Saiklao'},
+      { image: image18, name: 'Siraphop Nilbodee' },
+      { image: image19, name: 'Sakchai Pratantip'},
+      { image: image20, name: 'Koji Higashi'}
       
   ];
 
