@@ -6,7 +6,7 @@ import image1 from '../../assets/enviroments/slide1.jpg';
 import image2 from '../../assets/enviroments/slide2.jpg';
 import image3 from '../../assets/enviroments/slide3.png';
 import image4 from '../../assets/enviroments/slide4.jpg';
-import shadow from '../../assets/assets/balck_shadow.png';
+import shadow from '../../assets/balck_shadow.png';
 
 import '../Home.css'
 
