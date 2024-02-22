@@ -2,10 +2,10 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Assuming you are using React Router
 import "../Header.css";
-import home1 from '/Users/dm/Desktop/react-navbar/src/assets/landing.png';
-import via_baht from '/Users/dm/Desktop/react-navbar/src/assets/via_bath.png';
-import via_lightning from '/Users/dm/Desktop/react-navbar/src/assets/via_lightning.png';
-import shadow from '/Users/dm/Desktop/react-navbar/src/assets/balck_shadow.png';
+import home1 from '../../assets/landing.png';
+import via_baht from '../../assets/via_bath.png';
+import via_lightning from '../../assets/via_lightning.png';
+import shadow from '../../assets/balck_shadow.png';
 import CountdownTimer from "./CountdownTimer";
 
 export const Header = () => {
