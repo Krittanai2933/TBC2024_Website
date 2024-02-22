@@ -1,0 +1,91 @@
+h2{
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 61px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+.sechost-container {
+    background-color: black;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+.container {
+    /* display: block; */
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.grid {
+    width: 50%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+.grid1 {
+    width: 75%; /* Can be in percentage also. */
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+.row-big,
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+}
+
+.row-big img {
+    /* width: 30%;
+    height: auto; */
+    border-radius: 5%;
+    width: 200px;
+    height: 154px;
+    top: 17px;
+    left: 65px;
+
+}
+
+.row img {
+    width: 20%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/* SecSpon.css */
+.sponsor-image {
+    max-width: 100%; /* Set maximum width to 100% */
+    max-height: 100%; /* Set maximum height to 100% */
+    object-fit: contain; /* Maintain aspect ratio while fitting within the specified dimensions */
+  }
+  
+  @media only screen and (max-width: 768px) {
+    h2 {
+      font-size: 40px;
+    }
+  
+    .sechost-container,
+    .container {
+      padding: 10px;
+    }
+  
+    .row-big {
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
+      justify-content: center; /* Center items on smaller screens */
+      margin: 2rem 0;
+    }
+  
+    .row-big img {
+      max-width: 100%;
+      margin-bottom: 0.5rem;
+    }
+   
+  }
