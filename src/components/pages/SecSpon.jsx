@@ -1,5 +1,5 @@
 import React from "react";
-import "../SecsSpon.css";
+import "../Secspon.css";
 import techsauce from "../../assets/techsauce.png";
 import trueD from "../../assets/sponsor/true.png";
 import Lumen from "../../assets/sponsor/lumen.png";
