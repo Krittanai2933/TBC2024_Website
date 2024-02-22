@@ -2,11 +2,11 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import image1 from '/Users/dm/Desktop/tbc-lastest/src/assets/enviroments/slide1.jpg';
-import image2 from '/Users/dm/Desktop/tbc-lastest/src/assets/enviroments/slide2.jpg';
-import image3 from '/Users/dm/Desktop/tbc-lastest/src/assets/enviroments/slide3.png';
-import image4 from '/Users/dm/Desktop/tbc-lastest/src/assets/enviroments/slide4.jpg';
-import shadow from '/Users/dm/Desktop/tbc-lastest/src/assets/balck_shadow.png';
+import image1 from '../../assets/enviroments/slide1.jpg';
+import image2 from '../../assets/enviroments/slide2.jpg';
+import image3 from '../../assets/enviroments/slide3.png';
+import image4 from '../../assets/enviroments/slide4.jpg';
+import shadow from '../../assets/assets/balck_shadow.png';
 
 import '../Home.css'
 
