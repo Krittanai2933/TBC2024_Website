@@ -1,11 +1,11 @@
 import React from "react";
-import "../SecSpon.css";
-import techsauce from "/Users/dm/Desktop/tbc-lastest/src/assets/techsauce.png";
-import trueD from "/Users/dm/Desktop/tbc-lastest/src/assets/sponsor/true.png";
-import Lumen from "/Users/dm/Desktop/tbc-lastest/src/assets/sponsor/lumen.png";
-import crossVibe from "/Users/dm/Desktop/tbc-lastest/src/assets/sponsor/cross_vibe.png";
-import cakeChon from "/Users/dm/Desktop/tbc-lastest/src/assets/sponsor/cake_chon.png";
-import chitbeer from "/Users/dm/Desktop/tbc-lastest/src/assets/sponsor/chitbeer-1.png";
+import "../SecsSpon.css";
+import techsauce from "../../assets/techsauce.png";
+import trueD from "../../assets/sponsor/true.png";
+import Lumen from "../../assets/sponsor/lumen.png";
+import crossVibe from "../../assets/sponsor/cross_vibe.png";
+import cakeChon from "../../assets/sponsor/cake_chon.png";
+import chitbeer from "../../assets/sponsor/chitbeer-1.png";
 
 const links = [chitbeer, chitbeer, chitbeer];
 
