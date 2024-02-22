@@ -1,5 +1,5 @@
 import React from "react";
-import 'TBC2024_Website-main/src/components/Home.css';
+import './src/components/Home.css';
 import Carousel from "./Carousel";
 import SecSpon from "./SecSpon";
 import { Carousel2 } from "./Carousel2";
