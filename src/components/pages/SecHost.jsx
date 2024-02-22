@@ -1,7 +1,7 @@
 import React from 'react';
-import OurTeam from '/Users/dm/Desktop/tbc-lastest/src/assets/image-8.png';
-import RSlogo from '/Users/dm/Desktop/tbc-lastest/src/assets/logo_rs.png';
-import shadow from '/Users/dm/Desktop/tbc-lastest/src/assets/balck_shadow.png';
+import OurTeam from '../../assets/image-8.png';
+import RSlogo from '../../assets/logo_rs.png';
+import shadow from '../../assets/balck_shadow.png';
 import '../Home.css';
 
 
