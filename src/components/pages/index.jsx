@@ -3,7 +3,6 @@ export * from "./Gallery";
 export * from "./Home";
 export * from "./Speakers";
 export * from "./Sponsor";
-export * from "./Ticket";
 export * from "./Carousel";
 export * from "./Carousel2";
 export * from "./SecSpon";
