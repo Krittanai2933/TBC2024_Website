@@ -1,13 +1,13 @@
 import React from "react";
 import '../Sponsor.css';
-import image1 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/1.png"
+import image1 from "../../assets/sponPage/1.png"
 import image2 from "../../assets/sponPage/sponpage2.png"
-import image3 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/sponpage3.png"
-import image4 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/sponpage4.png"
-import image5 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/3.png"
-import image6 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/sponpage6.png"
-import image7 from "/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/2.png"
-import btn from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/sponPage/btn.png';
+import image3 from "../../assets/sponPage/sponpage3.png"
+import image4 from "../../assets/sponPage/sponpage4.png"
+import image5 from "../../assets/sponPage/3.png"
+import image6 from "../../assets/sponPage/sponpage6.png"
+import image7 from "../../assets/sponPage/2.png"
+import btn from '../..//assets/sponPage/btn.png';
 
 import shadow from '../../assets/balck_shadow.png';
 
