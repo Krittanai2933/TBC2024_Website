@@ -1,6 +1,6 @@
 // Header.js
 import React from "react";
-import { Link } from "react-router-dom"; // Assuming you are using React Router
+import { Link } from "react-router-dom"; 
 import "../Header.css";
 import home1 from '../../assets/landing.png';
 import via_baht from '../../assets/via_bath.png';
