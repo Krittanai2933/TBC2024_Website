@@ -1,20 +1,20 @@
 import React from "react";
 import '../Agenda.css'
 import shadow from '../../assets/balck_shadow.png';
-import agenda1 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/1.png';
-import agenda2 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/2.png';
-import agenda3 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/3.png';
-import agenda4 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/4.png';
-import agenda5 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/5.png';
-import agenda6 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/6.png';
-import agenda7 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/7.png';
-import agenda8 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/8.png';
-import agenda9 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/9.png';
-import agenda10 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/10.png';
-import agenda11 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/11.png';
-import agenda12 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/12.png';
-import agenda13 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/13.png';
-import agenda14 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/agenda/14.png';
+import agenda1 from '../../assets/agenda/1.png';
+import agenda2 from '../../assets/agenda/2.png';
+import agenda3 from '../../assets/agenda/3.png';
+import agenda4 from '../../assets/agenda/4.png';
+import agenda5 from '../../assets/agenda/5.png';
+import agenda6 from '../../assets/agenda/6.png';
+import agenda7 from '../../assets/agenda/7.png';
+import agenda8 from '../../assets/agenda/8.png';
+import agenda9 from '../../assets/agenda/9.png';
+import agenda10 from '../../assets/agenda/10.png';
+import agenda11 from '../../assets/agenda/11.png';
+import agenda12 from '../../assets/agenda/12.png';
+import agenda13 from '../../assets/agenda/13.png';
+import agenda14 from '../../assets/agenda/14.png';
 
 export const Agenda = () => {
   return (
