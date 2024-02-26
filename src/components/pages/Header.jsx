@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; 
 import "../Header.css";
-import home1 from '/Users/dm/Desktop/mainmai/TBC2024_Website/src/assets/TBC.png';
+import home1 from '../../assets/TBC.png';
 import via_baht from '../../assets/via_bath.png';
 import via_lightning from '../../assets/via_lightning.png';
 import shadow from '../../assets/balck_shadow.png';
