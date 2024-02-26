@@ -1,4 +1,6 @@
-
+body {
+  background-color: black;
+}
 .agenda-container {
     display: flex;
     flex-direction: column;
@@ -6,21 +8,23 @@
     background-color: black;
   }
   .agenda-image {
-    margin-bottom: 1%; 
+    margin-bottom: 12%; 
     border: 2px solid rgba(255, 255, 255, 0.316);
   }
   .shadow-image{
     padding: 5%;
   }
   .text-image {
+    
     display: flex;
     align-items: center;
   }
   h3{
+    margin-bottom: 12%; 
     opacity: 50%;
   }
   h2{
-    background-color: black;
+    margin-bottom: 5%; 
   }
   .text-image h3 {
     margin-right: 20px; /* Adjust the margin as needed for spacing between text and image */
