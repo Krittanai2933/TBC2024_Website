@@ -37,7 +37,7 @@ export const Carousel2 = () => {
 
     const speakers = [
       { image: image1, name: 'Albert Buu'},
-      { image: image2, name: 'Speaker 2' },
+      // { image: image2, name: 'Speaker 2' },
       { image: image3, name: 'Deja Piyavhatkul'},
       { image: image4, name: 'Chayoot Anukoolkarn' },
       { image: image5, name: 'Dea Rezkhita'},
@@ -51,7 +51,7 @@ export const Carousel2 = () => {
       { image: image13, name: 'Michael R. Keag'},
       { image: image14, name: 'Rolan Bewick'},
       { image: image15, name: 'Thanakrit Sangnongban' },
-      { image: image16, name: 'Speaker 16'},
+      // { image: image16, name: 'Speaker 16'},
       { image: image17, name: 'Wichit Saiklao'},
       { image: image18, name: 'Siraphop Nilbodee' },
       { image: image19, name: 'Sakchai Pratantip'},
