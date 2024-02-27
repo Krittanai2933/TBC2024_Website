@@ -1,0 +1,20 @@
+/* Gallery Container Styles */
+.gal-container {
+    background-color: black;
+    text-align: center;
+}
+
+/* Image Gallery Styles */
+.image_gal {
+    flex-direction: column;
+    width: 70%;
+    padding-top: 5%;
+}
+
+/* Image Styles */
+.image_gal img {
+    display: block;
+    margin: auto; /* Center the image horizontally within its container */
+    max-width: 100%; /* Ensure images don't exceed the container width */
+    height: auto; /* Maintain the aspect ratio of the images */
+}
