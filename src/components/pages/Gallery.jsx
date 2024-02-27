@@ -1,8 +1,8 @@
 import React from "react";
 import '../Gallery.css'
-import gal1 from '../..//assets/gallery/gal1.png';
+import gal1 from '../../assets/gallery/gal1.png';
 import gal2 from '../../assets/gallery/gal2.png';
-import gal3 from '../../assets/gal3.png';
+import gal3 from '../../assets/gallery/gal3.png';
 import gal4 from '../../assets/gallery/gal4.png';
 import gal5 from '../../assets/gallery/gal5.png';
 import gal6 from '../../assets/gallery/gal6.png';
