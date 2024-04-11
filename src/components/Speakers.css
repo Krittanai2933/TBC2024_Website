@@ -1,0 +1,58 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal space between cards */
+}
+
+.card {
+    margin-bottom: 15%; /* Add space between rows */
+    flex: 0 0 calc(33% - 100px); /* Four cards per row with spacing */
+    position: relative;
+    height: 135px;
+    background:  #F68B1E;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 5%;
+}
+
+
+.speaker-name {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center; /* Center-align text */
+}
+
+.speaker-image {
+    max-width: 100%;
+}
+
+.image-speaker {
+    position: absolute;
+    left: 50%;
+    top: -45px; /* Adjust the top position to create space */
+    transform: translateX(-50%);
+    width: 120px; /* Decrease the width to create space */
+    height: 120px; /* Decrease the height to create space */
+    border-radius: 50%; /* Make a circle around the picture */
+    overflow: hidden; /* Ensure image doesn't overflow */
+    border: 1 rem purple;
+}
+
+.image-speaker img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Ensure the image within the circle is also round */
+}
+
+.speaker-details {
+    margin-top: 30%;
+}
