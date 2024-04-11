@@ -1,102 +1,58 @@
-/* Add this section for speaker details styling */
-.speaker-details {
-font-family: Arial, Helvetica, sans-serif;    
-font-size: 16px;
-    color: #fff; /* Change to your preferred text color */
-    margin-top: 60%; 
-    text-align: center;
-  /* Adjust margin as needed */
-}
-
-/* The rest of your existing CSS */
-h2 {
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 61px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.sechost-container {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 20px; /* Add padding for better spacing */
-}
-
-.container {
-    /* display: block; */
-    background-color: black;
-    width: 100%;
-    text-align: center;
-    color: white;
-    position: relative;
-}
-
-.grid {
-    width: 50%; /* Can be in percentage also. */
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-}
-
-.grid1 {
-    width: 75%; /* Can be in percentage also. */
-    height: auto;
-    margin: 0 auto;
-    position: relative;
-}
-
-.row-big,
-.row {
+.card-container {
     display: flex;
-    justify-content: space-between;
-    margin: 2rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal space between cards */
 }
 
-.row-big img {
-    /* width: 30%;
-    height: auto; */
-    border-radius: 5%;
-    width: 200px;
-    height: 154px;
-    top: 17px;
-    left: 65px;
+.card {
+    margin-bottom: 15%; /* Add space between rows */
+    flex: 0 0 calc(33% - 100px); /* Four cards per row with spacing */
+    position: relative;
+    height: 135px;
+    background:  #F68B1E;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 2%;
+    margin-left: 5%;
 }
 
-.row img {
-    width: 20%;
-    height: auto;
-    border-radius: 5%;
+
+.speaker-name {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center; /* Center-align text */
 }
 
-/* SecSpon.css */
 .speaker-image {
-    max-width: 100%; /* Set maximum width to 100% */
-    max-height: 100%; /* Set maximum height to 100% */
-    object-fit: contain; /* Maintain aspect ratio while fitting within the specified dimensions */
-    border-radius: 10%;
+    max-width: 100%;
 }
 
-@media only screen and (max-width: 768px) {
-    h2 {
-        font-size: 40px;
-    }
+.image-speaker {
+    position: absolute;
+    left: 50%;
+    top: -45px; /* Adjust the top position to create space */
+    transform: translateX(-50%);
+    width: 120px; /* Decrease the width to create space */
+    height: 120px; /* Decrease the height to create space */
+    border-radius: 50%; /* Make a circle around the picture */
+    overflow: hidden; /* Ensure image doesn't overflow */
+    border: 1 rem purple;
+}
 
-    .sechost-container,
-    .container {
-        padding: 10px;
-    }
+.image-speaker img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Ensure the image within the circle is also round */
+}
 
-    .row-big {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap to the next line */
-        justify-content: center; /* Center items on smaller screens */
-        margin: 2rem 0;
-    }
-
-    .row-big img {
-        max-width: 100%;
-        margin-bottom: 0.5rem;
-    }
+.speaker-details {
+    margin-top: 30%;
 }
