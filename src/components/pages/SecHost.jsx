@@ -4,16 +4,15 @@ import RSlogo from '../../assets/logo_rs.png';
 import shadow from '../../assets/balck_shadow.png';
 import '../Home.css';
 
-
 export const SecHost = () => {
   return (
     <div className="sechost-container">
       <h2>Host</h2>
-      <div className='grid1'>
-        <img src={RSlogo} alt="Right Shift logo" className='rs' />
-        <img src={OurTeam} alt="OurTeam" />
+      <div className="grid1">
+        <img src={RSlogo} alt="Right Shift logo" className="rs" />
+        <img src={OurTeam} alt="OurTeam" className="our-team" />
       </div>
-      <img src={ shadow } alt="shadow" className="shadow"/>
+      <img src={shadow} alt="shadow" className="shadow" />
     </div>
   );
 };

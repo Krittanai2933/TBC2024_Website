@@ -1,63 +1,124 @@
+/* General Styles */
 body {
   background-color: black;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Ensure full viewport height */
 }
+
 .agenda-container {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  background-color: black;
+  padding: 20px; /* Add some padding for better spacing on larger screens */
+  position: relative; /* Add relative positioning */
+}
+
+.agenda-image {
+  width: 100%;
+  max-width: 600px; /* Limit the max width of the image */
+  height: auto;
+  margin-bottom: 7%; 
+  border: 2px solid rgba(255, 255, 255, 0.316);
+  display: block; /* Ensure the image is block-level */
+  margin: auto; /* Center the image horizontally */
+}
+
+.shadow-image {
+  text-align: center;
+  padding: 5%;
+}
+
+.text-image {
+  display: flex;
+  flex-direction: column; /* Stack text and image vertically */
+  align-items: center; /* Center items horizontally */
+  margin-bottom: 5%; /* Add some space below */
+}
+
+.text-image h3 {
+  margin-bottom: 20px; /* Adjust the margin for spacing between text and image */
+}
+
+h3 {
+  margin-bottom: 5%; 
+  opacity: 50%;
+}
+
+h2 {
+  margin-bottom: 5%; 
+  color: #F68B1E; /* Add color for h2 to match the previous example */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  .agenda-container {
+    width: 90%;
+    padding: 10px; /* Adjust padding for smaller screens */
+    justify-content: center; /* Center content vertically */
+  }
+
+  .agenda-image {
+    width: 100%;
+    max-width: none; /* Remove max-width limit */
+  }
+
+  .text-image {
+    flex-direction: column; /* Stack text and image vertically */
     align-items: center; /* Center items horizontally */
+  }
+
+  .text-image h3 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for spacing */
+  }
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
     background-color: black;
   }
+
+  .agenda-container {
+    width: 100%;
+    padding: 10px; /* Adjust padding for smaller screens */
+    justify-content: center; /* Center content vertically */
+  }
+
   .agenda-image {
-    margin-bottom: 7%; 
-    border: 2px solid rgba(255, 255, 255, 0.316);
+    width: 100%;
+    height: auto;
+    margin-bottom: 10%; /* Adjust margin for smaller screens */
   }
-  .shadow-image{
-    padding: 5%;
+
+  .shadow-image {
+    padding: 10px; /* Adjust padding for smaller screens */
   }
+
   .text-image {
-    
-    display: flex;
-    align-items: center;
+    margin-left: 0; /* Remove left margin for smaller screens */
+    width: 100%; /* Ensure full width */
   }
-  h3{
+
+  h2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for smaller screens */
+  }
+
+  h3 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
     margin-bottom: 5%; 
     opacity: 50%;
   }
-  h2{
-    margin-bottom: 5%; 
-  }
+
   .text-image h3 {
-    margin-right: 20px; /* Adjust the margin as needed for spacing between text and image */
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for spacing */
   }
-  .shadow-image{
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
 }
-@media only screen and (max-width: 480px) {
-    body {
-      background-color: black;
-    }
-  
-    .agenda-container {
-      width: 70%;
-      height: auto;
-    }
-  
-    .text-image {
-      margin-left: 20%;
-    }
-  
-    .h2 {
-      font-size: 150%;
-    }
-  
-    h3 {
-      font-size: 7px;
-      opacity: 50%;    }
-  
-    .text-image h3 {
-      margin-right: 20%; /* Adjust the margin as needed for spacing between text and image */
-    }
-  }
-  

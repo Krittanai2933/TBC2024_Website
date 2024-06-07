@@ -1,45 +1,47 @@
-h1 {
-  font-size: 50px;
-  font-weight: 800;
-  line-height: 61px;
-  letter-spacing: 0em;
+/* General Styles */
+.container {
+  padding: 0 10%;
   text-align: center;
-  color: #F68B1E;
-  padding-top: 2%;
-  padding-bottom: 5%;
 }
 
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #F68B1E;
+  margin: 2% 0 5%;
+}
+
+/* Carousel Styles */
 .carousel-container2 {
   padding-left: 10%;
   padding-right: 10%;
 }
 
-.carousel-slide {
+.carousel-slide2 {
   position: relative;
+  height: auto;
+  margin-left: auto;
+  padding: 0 10px; /* Adjust for spacing */
 }
 
-.carousel-slide img {
+.carousel-slide2 img {
   width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-
-.carousel-slide2 {
-  position: relative;
-  height: 20rem;
-  margin-left: auto;
-}
 .card-details {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 16px; /* Adjust as needed */
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  color: #fff; /* Text color */
+  color: #fff;
+  text-align: center;
 }
 
 .card-details h3 {
@@ -47,32 +49,52 @@ h1 {
   font-size: 18px;
 }
 
-
 .speaker {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   border-radius: 8px;
 }
-@media only screen and (max-width: 480px) {
+
+.shadow {
+  width: 100%;
+  margin: 5% 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+  h1 {
+      font-size: 2rem;
+  }
+
   .carousel-slide2 {
-    position: relative;
-    height: 50%;
-    margin-left: auto;
+      padding: 0 5px; /* Adjust for spacing on smaller screens */
   }
+
   .card-details h3 {
-    margin: 0;
-    font-size: 10%;
+      font-size: 16px;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem;
+  }
+
+  .carousel-container2 {
+      padding-left: 5%;
+      padding-right: 5%;
+  }
+
+  .carousel-slide2 {
+      padding: 0 2px; /* Adjust for spacing on smaller screens */
+  }
+
+  .card-details h3 {
+      font-size: 14px;
+  }
+
   .card-details {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 3px; /* Adjust as needed */
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    color: #fff; /* Text color */
+      padding: 8px;
   }
 }

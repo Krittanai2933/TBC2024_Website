@@ -1,91 +1,81 @@
+/* General Styles */
 .header-container {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .main-content-container {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  
-  }
-  #btn{
-    max-width: 15%;
-    max-height: 15%;
-    margin-right: 0.5%;
-
-  }
-  .container1{
-    margin: auto;
+  text-align: center;
 }
 
-  /* .button {
-    cursor: pointer;
-    border-radius: 50px;
-    margin: 20px; 
-  } */
-  
-  .button img {
-    height: 10%;
-    width: auto;
-    border-radius: 50px;
+.image-container {
+  position: relative;
+}
+
+.image_home {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  position: absolute;
+  top: 100%; /* Adjust this value to move the buttons up or down */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column; /* Change to row if you want buttons side by side */
+  gap: 10px; /* Space between buttons */
+}
+
+.btn {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  cursor: pointer;
+}
+
+.shadow {
+  width: 100%;
+  margin: 5% 0;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #F68B1E;
+  margin: 20px 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1024px) {
+  .button-container {
+      top: 80%;
+      transform: translate(-50%, -50%);
   }
-  
+
+  .btn {
+      width: 120px; /* Adjust size as needed */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-container {
+    top: 50%;
+  }
+
+  .btn {
+      width: 90px; /* Adjust size as needed */
+  }
+
   h2 {
-    font-size: 50px;
-    font-weight: 800;
-    line-height: 61px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 1%;
+      font-size: 1.5rem;
   }
-  
-  .shadow {
-    padding-top: 5%;
-    padding-bottom: 5%;
-  }
-  .move{
-    transform: translate( -10px, -150px);
-    }
+}
 
-    @media only screen and (max-width: 480px) {
-    .header-container {
-        width: auto;
-        text-align: center;
-       
-    }
-    
-    h2 {
-      font-size: 40px;
-    }
-  
-    .main-content-container {
-      display: inline-block;
-      justify-content: flex-end;
-      align-items: center;
-      flex-wrap: wrap;
-
-    }
-    #btn{
-      max-width: 15%;
-      max-height: 15%;
-      margin-right: 0.5%;
-      margin-top: 25%;    
-    }
-  
-    .button {
-      margin: 10px;
-    }
-    img{
-      height: auto;
-      width: 100%;
-    }
-    iframe{
-        max-width: 100% !important;
-        width: auto !important;
-        height: auto !important;
-    }
+@media only screen and (max-width: 480px) {
+  .button-container {
+      flex-direction: row;
+      gap: 5px; /* Reduce gap between buttons for smaller screens */
   }
-  
+
+  .btn {
+      width: 80px; /* Adjust size as needed */
+  }
+
+  h2 {
+      font-size: 1.2rem;
+  }
+}

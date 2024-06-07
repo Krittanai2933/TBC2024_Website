@@ -1,0 +1,56 @@
+/* General Styles */
+.container {
+    padding: 0 10%;
+    text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+}
+
+.carousel-slide {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.shadow {
+    width: 100%;
+    margin: 5% 0;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1024px) {
+    .container {
+        padding: 0 5%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        padding: 0 1%;
+    }
+
+    .carousel-slide img {
+        border-radius: 5px;
+    }
+
+    .shadow {
+        margin: 3% 0;
+    }
+}

@@ -8,7 +8,7 @@ import image3 from '../../assets/enviroments/slide3.png';
 import image4 from '../../assets/enviroments/slide4.jpg';
 import shadow from '../../assets/balck_shadow.png';
 
-import '../Home.css'
+import '../Carousel.css'
 
 export const Carousel = () => {
     const settings = {

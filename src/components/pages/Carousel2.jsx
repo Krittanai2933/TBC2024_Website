@@ -23,7 +23,6 @@ import image18 from '../../assets/speakers/18.png';
 import image19 from '../../assets/speakers/19.png';
 import image20 from '../../assets/speakers/20.png';
 import shadow from '../../assets/balck_shadow.png';
-
 import '../Carousel2.css';
 
 export const Carousel2 = () => {
@@ -32,52 +31,62 @@ export const Carousel2 = () => {
         infinite: true,  // Set to true for looping
         speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 3
+        slidesToScroll: 3,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                }
+            }
+        ]
     };
 
     const speakers = [
-      { image: image1, name: 'Albert Buu'},
-      // { image: image2, name: 'Speaker 2' },
-      { image: image3, name: 'Deja Piyavhatkul'},
-      { image: image4, name: 'Chayoot Anukoolkarn' },
-      { image: image5, name: 'Dea Rezkhita'},
-      { image: image6, name: 'Captain Sidd' },
-      { image: image7, name: 'เพียว Cat Money'},
-      { image: image8, name: 'Piccolo' },
-      { image: image9, name: 'Pisut Oncharoen'},
-      { image: image10, name: 'Piriya Sambandaraksa'},
-      { image: image11, name: 'Dr.Big'},
-      { image: image12, name: 'Jimmy Kostro'},
-      { image: image13, name: 'Michael R. Keag'},
-      { image: image14, name: 'Rolan Bewick'},
-      { image: image15, name: 'Thanakrit Sangnongban' },
-      // { image: image16, name: 'Speaker 16'},
-      { image: image17, name: 'Wichit Saiklao'},
-      { image: image18, name: 'Siraphop Nilbodee' },
-      { image: image19, name: 'Sakchai Pratantip'},
-      { image: image20, name: 'Koji Higashi'}
-      
-  ];
+        { image: image1, name: 'Albert Buu'},
+        { image: image3, name: 'Deja Piyavhatkul'},
+        { image: image4, name: 'Chayoot Anukoolkarn' },
+        { image: image5, name: 'Dea Rezkhita'},
+        { image: image6, name: 'Captain Sidd' },
+        { image: image7, name: 'เพียว Cat Money'},
+        { image: image8, name: 'Piccolo' },
+        { image: image9, name: 'Pisut Oncharoen'},
+        { image: image10, name: 'Piriya Sambandaraksa'},
+        { image: image11, name: 'Dr.Big'},
+        { image: image12, name: 'Jimmy Kostro'},
+        { image: image13, name: 'Michael R. Keag'},
+        { image: image14, name: 'Rolan Bewick'},
+        { image: image15, name: 'Thanakrit Sangnongban' },
+        { image: image17, name: 'Wichit Saiklao'},
+        { image: image18, name: 'Siraphop Nilbodee' },
+        { image: image19, name: 'Sakchai Pratantip'},
+        { image: image20, name: 'Koji Higashi'}
+    ];
 
-  return (
-      <div className="container">
-          <h1>Speakers</h1>
-          <div className="carousel-container2">
-              <Slider {...settings}>
-                  {/* Map through the speakers array to generate carousel slides */}
-                  {speakers.map((speaker) => (
-                      <div className="carousel-slide2" key={speaker.id}>
-                          <img src={speaker.image} alt={`Slide ${speaker.id}`} className="speaker" />
-                          <div className="card-details">
-                              <h3>{speaker.name}</h3>
-                              <p>{speaker.details}</p>
-                          </div>
-                      </div>
-                  ))}
-              </Slider>
-          </div>
-          <img src={shadow} alt="shadow" className="shadow" />
-      </div>
-  );
-
+    return (
+        <div className="container">
+            <h1>Speakers</h1>
+            <div className="carousel-container2">
+                <Slider {...settings}>
+                    {speakers.map((speaker, index) => (
+                        <div className="carousel-slide2" key={index}>
+                            <img src={speaker.image} alt={speaker.name} className="speaker" />
+                            <div className="card-details">
+                                <h3>{speaker.name}</h3>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
+            </div>
+            <img src={shadow} alt="shadow" className="shadow" />
+        </div>
+    );
 };

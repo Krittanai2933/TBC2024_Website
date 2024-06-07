@@ -5,8 +5,6 @@ import SecSpon from "./SecSpon";
 import { Carousel2 } from "./Carousel2";
 import { SecHost } from "./SecHost";
 import { Header } from "./Header";
-import CountdownTimer from "./CountdownTimer";
-
 
 export const Home = () => {
   return (
