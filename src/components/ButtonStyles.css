@@ -1,0 +1,138 @@
+/* General Styles */
+.relative-container {
+  position: relative;
+  display: inline-block; /* Adjust as needed */
+  width: 100%;
+}
+
+.image_home {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Space between buttons */
+  padding: 1rem;
+}
+
+.button-container .btn {
+  width: 10vw; /* Adjust width using viewport width units */
+  max-width: 150px; /* Ensure buttons don’t get too large */
+  height: auto;
+}
+
+
+@media (max-width: 1500px) {
+  .button-container {
+    top: 135%;
+  }
+
+  .button-container .btn {
+    width: 11vw;
+    max-width: 140px; /* Adjust size as needed */
+  }
+}
+
+
+@media (max-width: 1340px) {
+    .button-container {
+      top: 109%;
+    }
+  
+    .button-container .btn {
+      width: 11vw;
+      max-width: 140px; /* Adjust size as needed */
+    }
+  }
+@media (max-width: 1280px) {
+  /* .button-container {
+    top: 90%;
+  } */
+
+  .button-container .btn {
+    width: 12vw;
+    max-width: 130px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 1024px) {
+  .button-container {
+    top: 86%;
+  }
+
+  .button-container .btn {
+    width: 13vw;
+    max-width: 120px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 900px) {
+  .button-container {
+    top: 76%;
+  }
+
+  .button-container .btn {
+    width: 14vw;
+    max-width: 110px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 800px) {
+  .button-container {
+    top: 69%;
+  }
+
+  .button-container .btn {
+    width: 16vw;
+    max-width: 100px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 700px) {
+  .button-container {
+    top: 60%;
+  }
+
+  .button-container .btn {
+    width: 18vw;
+    max-width: 90px; /* Adjust size as needed */
+  }
+}
+
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: stretch; /* Make buttons take full width */
+    top: 55%;
+  }
+
+  .button-container .btn {
+    width: 70%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    top: 45%;
+  }
+
+  .button-container .btn {
+    width: 80%; /* Full width on small screens */
+  }
+}
+
+@media (max-width: 360px) {
+  .button-container {
+    top: 30%;
+  }
+
+  .button-container .btn {
+    width: 90%; /* Full width on small screens */
+  }
+}

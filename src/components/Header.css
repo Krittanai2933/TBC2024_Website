@@ -14,23 +14,19 @@
 
 .button-container {
   position: absolute;
-  top: 100%; /* Adjust this value to move the buttons up or down */
-  left: 50%;
-  transform: translate(-50%, -50%);
   display: flex;
-  flex-direction: column; /* Change to row if you want buttons side by side */
-  gap: 10px; /* Space between buttons */
+  flex-direction: column;
 }
 
 .btn {
-  width: 150px; /* Adjust size as needed */
+  width: 150px; 
   height: auto;
   cursor: pointer;
 }
 
 .shadow {
   width: 100%;
-  margin: 5% 0;
+  margin: 7% 0;
 }
 
 h2 {
@@ -42,12 +38,12 @@ h2 {
 /* Responsive Styles */
 @media only screen and (max-width: 1024px) {
   .button-container {
-      top: 80%;
-      transform: translate(-50%, -50%);
+    top: 80%;
+    transform: translate(-50%, -50%);
   }
 
   .btn {
-      width: 120px; /* Adjust size as needed */
+    width: 120px; /* Adjust size as needed */
   }
 }
 
@@ -57,25 +53,25 @@ h2 {
   }
 
   .btn {
-      width: 90px; /* Adjust size as needed */
+    width: 90px; /* Adjust size as needed */
   }
 
   h2 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .button-container {
-      flex-direction: row;
-      gap: 5px; /* Reduce gap between buttons for smaller screens */
+    flex-direction: row;
+    gap: 5px; /* Reduce gap between buttons for smaller screens */
   }
 
   .btn {
-      width: 80px; /* Adjust size as needed */
+    width: 80px; /* Adjust size as needed */
   }
 
   h2 {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 }

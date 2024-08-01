@@ -1,0 +1,85 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Ensure equal space between cards */
+}
+
+.card {
+    margin-bottom: 15%; /* Add space between rows */
+    flex: 0 0 calc(33% - 30px); /* Adjust for spacing between cards */
+    position: relative;
+    height: 135px;
+    background: #F68B1E;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 1%;
+    margin-left: 1%;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.speaker-name {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width */
+    text-align: center; /* Center-align text */
+}
+
+.speaker-image {
+    max-width: 100%;
+}
+
+.image-speaker {
+    position: absolute;
+    left: 50%;
+    top: -45px; /* Adjust the top position to create space */
+    transform: translateX(-50%);
+    width: 120px; /* Decrease the width to create space */
+    height: 120px; /* Decrease the height to create space */
+    border-radius: 50%; /* Make a circle around the picture */
+    overflow: hidden; /* Ensure image doesn't overflow */
+    border: 1rem purple; /* Corrected border syntax */
+}
+
+.image-speaker img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Ensure the image within the circle is also round */
+}
+
+.speaker-details {
+    margin-top: 30%;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+    .card {
+        flex: 0 0 calc(25% - 30px); /* Adjust for 4 cards per row */
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        flex: 0 0 calc(33% - 30px); /* Adjust for 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex: 0 0 calc(50% - 30px); /* Adjust for 2 cards per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .card {
+        flex: 0 0 calc(100% - 30px); /* Adjust for 1 card per row */
+    }
+}

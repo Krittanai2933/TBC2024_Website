@@ -1,47 +1,42 @@
-/* General Styles */
-.container {
-  padding: 0 10%;
-  text-align: center;
-}
-
 h1 {
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 61px;
+  letter-spacing: 0em;
+  text-align: center;
   color: #F68B1E;
-  margin: 2% 0 5%;
+  padding-top: 2%;
+  padding-bottom: 5%;
 }
 
-/* Carousel Styles */
 .carousel-container2 {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
+
+.carousel-slide {
+  position: relative;
+}
+
+
+
 
 .carousel-slide2 {
   position: relative;
-  height: auto;
+  height: 20rem;
   margin-left: auto;
-  padding: 0 10px; /* Adjust for spacing */
 }
-
-.carousel-slide2 img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
 .card-details {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 16px;
-  background-color: rgba(0, 0, 0, 0.7);
+  height: 1%;
+  padding: 10%; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  color: #fff;
-  text-align: center;
+  color: #fff; /* Text color */
 }
 
 .card-details h3 {
@@ -52,49 +47,32 @@ h1 {
 .speaker {
   display: block;
   width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.shadow {
-  width: 100%;
-  margin: 5% 0;
-}
-
-/* Responsive Styles */
-@media only screen and (max-width: 768px) {
-  h1 {
-      font-size: 2rem;
-  }
-
-  .carousel-slide2 {
-      padding: 0 5px; /* Adjust for spacing on smaller screens */
-  }
-
-  .card-details h3 {
-      font-size: 16px;
-  }
+  height: 100%;
+  border-radius: 15%;
+  object-fit: cover; 
+  padding-left: 10%;
+  padding-right: 10%;/* Ensure the image covers the entire area */
 }
 
 @media only screen and (max-width: 480px) {
-  h1 {
-      font-size: 1.5rem;
-  }
-
-  .carousel-container2 {
-      padding-left: 5%;
-      padding-right: 5%;
-  }
-
   .carousel-slide2 {
-      padding: 0 2px; /* Adjust for spacing on smaller screens */
+    position: relative;
+    height: 50%;
+    margin-left: auto;
   }
-
   .card-details h3 {
-      font-size: 14px;
+    margin: 0;
+    font-size: 10%;
   }
-
   .card-details {
-      padding: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 3px; /* Adjust as needed */
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #fff; /* Text color */
   }
 }

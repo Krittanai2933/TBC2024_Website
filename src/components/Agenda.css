@@ -22,8 +22,7 @@ body {
   height: auto;
   margin-bottom: 7%; 
   border: 2px solid rgba(255, 255, 255, 0.316);
-  display: block; /* Ensure the image is block-level */
-  margin: auto; /* Center the image horizontally */
+  
 }
 
 .shadow-image {
@@ -33,23 +32,23 @@ body {
 
 .text-image {
   display: flex;
-  flex-direction: column; /* Stack text and image vertically */
-  align-items: center; /* Center items horizontally */
+  flex-direction: row; /* Arrange items in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Add space between the text and image */
   margin-bottom: 5%; /* Add some space below */
 }
 
 .text-image h3 {
-  margin-bottom: 20px; /* Adjust the margin for spacing between text and image */
-}
-
-h3 {
-  margin-bottom: 5%; 
-  opacity: 50%;
+  margin-right: 20px; /* Add space between the text and image */
+  color: rgb(230, 228, 228); /* Add color to the text */
 }
 
 h2 {
   margin-bottom: 5%; 
   color: #F68B1E; /* Add color for h2 to match the previous example */
+  font-size: 2rem; /* Adjust font size */
+  text-align: center; /* Center align the text */
+  font-weight: bold; /* Make the text bold */
 }
 
 /* Responsive Styles */
@@ -62,6 +61,8 @@ h2 {
 
   .agenda-image {
     width: 100%;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     max-width: none; /* Remove max-width limit */
   }
 
@@ -71,7 +72,7 @@ h2 {
   }
 
   .text-image h3 {
-    font-size: 1rem; /* Adjust font size for smaller screens */
+    margin-right: 0; /* Remove right margin for smaller screens */
     margin-bottom: 10px; /* Adjust margin for spacing */
   }
 
@@ -94,6 +95,8 @@ h2 {
   .agenda-image {
     width: 100%;
     height: auto;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
     margin-bottom: 10%; /* Adjust margin for smaller screens */
   }
 
@@ -102,8 +105,13 @@ h2 {
   }
 
   .text-image {
-    margin-left: 0; /* Remove left margin for smaller screens */
-    width: 100%; /* Ensure full width */
+    flex-direction: column; /* Stack text and image vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .text-image h3 {
+    margin-right: 0; /* Remove right margin for smaller screens */
+    margin-bottom: 10px; /* Adjust margin for spacing */
   }
 
   h2 {
@@ -115,10 +123,5 @@ h2 {
     font-size: 1rem; /* Adjust font size for smaller screens */
     margin-bottom: 5%; 
     opacity: 50%;
-  }
-
-  .text-image h3 {
-    margin-right: 0; /* Remove right margin for smaller screens */
-    margin-bottom: 10px; /* Adjust margin for spacing */
   }
 }
