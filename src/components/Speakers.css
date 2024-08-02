@@ -2,36 +2,47 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Ensure equal space between cards */
+    padding: 20px; /* Optional: Add padding to the container for better spacing */
+    margin-top: 20px; /* Add space between the heading and the card container */
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 15%; /* Add space between rows */
-    flex: 0 0 calc(33% - 30px); /* Adjust for spacing between cards */
+    flex: 0 0 calc(33% - 100px); /* Three cards per row with spacing */
     position: relative;
     height: 135px;
     background: #F68B1E;
     border-radius: 20px;
     text-align: center;
-    margin-right: 1%;
-    margin-left: 1%;
-    box-sizing: border-box; /* Ensure padding is included in width */
+    margin-right: 2%;
+    margin-left: 2%; /* Adjust left and right margins for consistency */
+    padding-top: 60px; /* Add padding to accommodate the image */
 }
 
 .speaker-name {
     color: black;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: relative;
     width: 100%;
     padding: 10px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     box-sizing: border-box; /* Ensure padding is included in width */
     text-align: center; /* Center-align text */
+    font-size: 1rem; /* Adjust font size for speaker name */
+    margin-top: auto; /* Push the name to the bottom */
 }
 
-.speaker-image {
-    max-width: 100%;
+.speaker-title {
+    color: black;
+    position: relative;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 0.8rem; /* Smaller font for titles */
+    margin-bottom: auto; /* Push the title to the top */
 }
 
 .image-speaker {
@@ -43,7 +54,7 @@
     height: 120px; /* Decrease the height to create space */
     border-radius: 50%; /* Make a circle around the picture */
     overflow: hidden; /* Ensure image doesn't overflow */
-    border: 1rem purple; /* Corrected border syntax */
+    border: 1rem purple;
 }
 
 .image-speaker img {
@@ -53,33 +64,69 @@
     border-radius: 50%; /* Ensure the image within the circle is also round */
 }
 
-.speaker-details {
-    margin-top: 30%;
+.center-heading {
+    text-align: center;
+    margin-bottom: 5rem; /* Add space between the heading and the card container */
+    font-size: 3rem; /* Initial font size for heading */
 }
 
-/* Media queries for responsive design */
-@media (max-width: 1200px) {
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
     .card {
-        flex: 0 0 calc(25% - 30px); /* Adjust for 4 cards per row */
-        margin-left: 1%;
-        margin-right: 1%;
+        flex: 0 0 calc(50% - 60px); /* Two cards per row on tablets and smaller screens */
     }
-}
 
-@media (max-width: 992px) {
-    .card {
-        flex: 0 0 calc(33% - 30px); /* Adjust for 3 cards per row */
+    .image-speaker {
+        width: 100px; /* Adjust image size */
+        height: 100px;
+    }
+
+    .center-heading {
+        font-size: 2rem; /* Adjust heading font size */
+    }
+
+    .speaker-name, .speaker-title {
+        font-size: 0.9rem; /* Adjust speaker name and title font size */
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        flex: 0 0 calc(50% - 30px); /* Adjust for 2 cards per row */
+        flex: 0 0 calc(50% - 40px); /* Two cards per row on smaller tablets */
+    }
+
+    .image-speaker {
+        width: 90px; /* Adjust image size */
+        height: 90px;
+    }
+
+    .center-heading {
+        font-size: 1.6rem; /* Adjust heading font size */
+    }
+
+    .speaker-name, .speaker-title {
+        font-size: 0.85rem; /* Adjust speaker name and title font size */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     .card {
-        flex: 0 0 calc(100% - 30px); /* Adjust for 1 card per row */
+        flex: 0 0 calc(100% - 20px); /* One card per row on mobile */
+        height: auto; /* Adjust height for mobile */
+        margin-bottom: 30px; /* Adjust bottom margin for mobile */
+        padding-top: 40px; /* Adjust padding to accommodate the image */
+    }
+
+    .image-speaker {
+        width: 80px; /* Adjust image size */
+        height: 80px;
+    }
+
+    .center-heading {
+        font-size: 1.4rem; /* Adjust heading font size */
+    }
+
+    .speaker-name, .speaker-title {
+        font-size: 0.75rem; /* Adjust speaker name and title font size */
     }
 }
