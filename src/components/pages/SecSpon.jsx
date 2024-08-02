@@ -2,7 +2,7 @@ import React from "react";
 import "../Secspon.css";
 
 const logos = [
-  { url: "../src/assets/sponsor/logos/logo_square/neutronpay.png", alt: "Neutronpay" },
+  { url: "../../assets/sponsor/logos/logo_square/neutronpay.png", alt: "Neutronpay" },
   { url: "../src/assets/sponsor/logos/logo_square/mebit.png", alt: "Mebit" },
   { url: "../src/assets/sponsor/logos/logo_square/okx.png", alt: "OKX" },
   { url: "../src/assets/sponsor/logos/logo_square/beer_pot.png", alt: "Beer_Pot" },
